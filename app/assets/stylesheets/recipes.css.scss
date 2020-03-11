@@ -57,3 +57,31 @@ h2 {
 p {
   margin: 0;
 }
+
+.new-form form{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.new-form input {
+  margin: 1rem;
+  width: 30%;
+}
+
+.new-form .btn {
+  width: 10%;
+}
+
+.show-row {
+  padding-left: 1rem;
+}
+
+.show-row p {
+  margin: .75rem 0;
+}
+
+h4 {
+  margin: 0;
+}

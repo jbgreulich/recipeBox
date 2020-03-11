@@ -1,0 +1,33 @@
+<div class='show-row'>
+  <h2><%= @recipe.name %></h2>
+  <p>source: <%= @recipe.source %></p>
+  <p>yield: <%= @recipe.yield %></p>
+  <p>cooktime: <%= @recipe.cooktime %><p>
+  <p><%= @recipe.description %></p>
+  
+  <p>
+    <% @recipe.ingredients.each do |i| %>
+      <li><%= i %></li>
+    <% end %>
+  </p>
+  
+  <p>instructions: 
+    <% @recipe.instructions.each do |i| %>
+      <h4>&nbsp&nbsp<%= i %></h4>
+    <% end %>
+  </p>
+</div>
+
+<div class='edit-recipe'>
+  <%= link_to 'edit recipe', edit_recipe_path %>
+</div>
+
+<div class='delete-recipe'>
+  <%= link_to 'delete recipe', recipe_path(@recipe), method: :delete %>
+</div>
+
+<div>
+  <h3>
+    <%= link_to 'back to recipes', recipes_path %>
+  </h3>
+</div>

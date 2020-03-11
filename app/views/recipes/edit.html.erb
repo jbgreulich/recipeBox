@@ -1,0 +1,12 @@
+<div class='new-form'>
+  <%= form_for(@recipe) do |f| %>
+    <%= f.text_field :name, :placeholder => 'recipe name' %>
+    <%= f.text_field :source, :placeholder => 'source' %>
+    <%= f.text_field :description, :placeholder => 'description' %>
+    <%= f.text_field :yield, :placeholder => 'yield' %>
+    <%= f.text_field :cooktime, :placeholder => 'cooktime' %>
+    <%= f.text_field :ingredients, :placeholder => 'ingredients' %>
+    <%= f.text_field :instructions, :placeholder => 'instructions' %>
+    <%= f.submit 'submit', :class => "btn" %>
+  <% end %>
+  </div>
